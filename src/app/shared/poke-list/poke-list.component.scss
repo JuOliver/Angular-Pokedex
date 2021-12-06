@@ -1,0 +1,67 @@
+$padding: 20px;
+:host{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: $padding 0;
+
+    .pokemon{
+        position: relative;
+        display: flex;
+        background: var(--branco);
+
+        width: calc(49% - 2.5rem);
+        height: calc(157px - 40px);
+        padding: $padding;
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+        text-decoration: none;
+        color: var(--primary-color);
+
+        &__status{
+            h2{
+                font-size: 22px;
+                font-style: italic;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+
+                li{
+                background: var(--cinza);
+                font-size: 10px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 50px;
+
+                width: 60px;
+                margin-bottom:5px;
+                }
+            }
+        }
+
+        &__image{
+            position: absolute;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: $padding;
+            bottom: $padding;
+
+            background: url('../../../assets/bg/background-list-pokemon.svg') no-repeat;
+
+            img{
+                width: 60px;
+            }
+        }
+    }
+}

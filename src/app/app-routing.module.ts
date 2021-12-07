@@ -4,10 +4,9 @@ import { DetailsComponent } from './pages/details/details.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: 'home', component: HomeComponent },
-  { path: 'details/:id', component: DetailsComponent}
-
+  {
+    path: '',
+    loadChildren: () => import('./pages/pages.module').then(p => p.PagesModule)}
 ];
 
 @NgModule({

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { PokeListComponent } from './poke-list/poke-list.component';
-import { Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +15,7 @@ import { Router, RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     HeaderComponent,

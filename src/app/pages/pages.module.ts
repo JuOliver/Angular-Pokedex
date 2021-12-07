@@ -5,9 +5,9 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 
 //Module routing
-import { RouterModule } from '@angular/router';
 import { DetailsComponent } from './details/details.component';
 import { SharedModule } from '../shared/shared.module';
+import { RoutingModule } from './routing.module';
 
 
 
@@ -18,7 +18,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    RouterModule,
+    RoutingModule,
     SharedModule
   ]
 })

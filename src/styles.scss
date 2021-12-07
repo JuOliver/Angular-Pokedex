@@ -1,6 +1,8 @@
 @use './config-scss/variables.scss';
 @use './config-scss/reset.scss';
 @use './config-scss/rem-calc.scss';
+@use './config-scss/btn.scss';
+@use './config-scss/animaton.scss';
 
 html {
 	font-family: 'Roboto', sans-serif;

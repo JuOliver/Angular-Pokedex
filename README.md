@@ -1,4 +1,4 @@
-# Pokedex
+# Pokédex
 
 Site: https://juoliver.github.io/Angular-Pokedex/
 
